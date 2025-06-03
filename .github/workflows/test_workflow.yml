@@ -1,0 +1,11 @@
+name: test_workflow
+on: workflow_dispatch
+
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: install dependencies
+        run: npm install
+      - name: Finishing up
+        run: echo "Done!"
